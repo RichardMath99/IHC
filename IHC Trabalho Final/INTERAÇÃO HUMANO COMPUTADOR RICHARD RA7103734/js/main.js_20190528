@@ -1,0 +1,98 @@
+// Side Menu
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+    // Scrollspy
+    const ss = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(ss, {});
+
+    // Material Boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {});
+
+    // Auto Complete
+    const ac = document.querySelector('.autocomplete');
+    M.Autocomplete.init(ac, {
+        data: {
+          "Aruba": null,
+          "Cancun Mexico": null,
+          "Hawaii": null,
+          "Florida": null,
+          "California": null,
+          "Jamaica": null,
+          "Europe": null,
+          "The Bahamas": null,
+        }
+      });
+      var nome = document.querySelector("#first");
+      var email = document.querySelector("#email");
+      var btn = document.querySelector("#btn-form");
+
+      // Funcoes de validacao
+      //validacaonome
+      function validaNome(){
+          var input = document.getElementById('name').value;
+          if(input === "" && input.length < 2){
+            // swal({
+            //   title: "Erro!!",
+            //   text: "Digite o nome com minimo dois caracteres",
+            //   button: "Aww yiss!", });
+            Swal.fire({
+  type: 'error',
+  title: 'Nome inválido',
+  text: 'Digite o nome com minimo dois caracteres',
+});
+          }else{
+            return true;
+          }
+      }
+      //validacao do email
+      function validaEmail(){
+          var email = document.getElementById('email').value;
+
+          if((email != "") && (email.indexOf("@")  != -1)){
+              if(email.indexOf(".") > email.indexOf("@")){
+                return true;
+              }else{
+                // swal({
+                //   title: "Erro!!",
+                //   text: "Digite um Email valido",
+                //   button: "Aww yiss!", });
+                Swal.fire({
+  type: 'error',
+  title: 'Oops...',
+  text: 'Digite um Email valido!'
+});
+              }
+            }else{
+              // swal({
+              //   title: "Erro!!",
+              //   text: "Digite um Email valido",
+              //   button: "Aww yiss!", });
+              Swal.fire({
+type: 'error',
+title: 'Oops...',
+text: 'Digite um Email valido!'
+});
+            }
+
+      }
+
+      $("#form-contato").on("submit", function(e){
+        validaEmail();
+        validaNome();
+      });
+
+
+$("#mobile-demo > li").on("click", function(e){
+    $(".sidenav-overlay").trigger("click");
+});

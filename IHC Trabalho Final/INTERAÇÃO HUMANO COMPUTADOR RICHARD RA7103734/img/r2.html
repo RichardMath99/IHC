@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-language" content="pt-BR" />
+		<meta name="title" content="Madero - The Best Burger in the World: Madero Steak House Shopping Campo Grande">
+	<meta name="description" content="O Madero Steak House oferece um cardápio criativo num ambiente único. Não deixe de experimentar as receitas mais famosas do Chef…">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="Madero - The Best Burger in the World: Madero Steak House Shopping Campo Grande" />
+    <meta property="og:description" content="O Madero Steak House oferece um cardápio criativo num ambiente único. Não deixe de experimentar as receitas mais famosas do Chef…" />
+    <meta name="google-site-verification" content="neDpF0DFv-QTAn599rb9Y3On8AeYhvwlb8VFqFMqhtw" />
+
+	<title>Madero - The Best Burger in the World: Madero Steak House Shopping Campo Grande</title>
+    
+    
+    <meta property="og:image" content="" />
+    <meta name="google-site-verification" content="y6vynCeOov3rwc-DTfHEJc3R4OtiKzbr8JGrAHZXflk" />
+
+    	  
+	<!-- Select2 -->
+	<link rel="stylesheet" type="text/css" href="https://www.restaurantemadero.com.br/assets/site/lib/select2/select2.css" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://www.restaurantemadero.com.br/assets/site/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.restaurantemadero.com.br/assets/site/lib/bootstrap/css/bootstrap-theme.min.css">
+	<!-- bxSlider -->
+    <link rel="stylesheet" type="text/css" href="https://www.restaurantemadero.com.br/assets/geral/datetimepicker-master/jquery.datetimepicker.css"/>
+	<link href="https://www.restaurantemadero.com.br/assets/site/lib/bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<!-- parallax -->
+	<link rel="stylesheet" href="https://www.restaurantemadero.com.br/assets/site/lib/parallax/normalize.css">
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.restaurantemadero.com.br/assets/site/css/formalize.css">
+			<link rel="stylesheet" href="https://www.restaurantemadero.com.br/assets/site/css/estilo.css?x=6be97ae2ead60869c089a2f25657e8a6" />
+		<link rel="shortcut icon" href="https://www.restaurantemadero.com.br/assets/geral/images/icons/favicon.ico" />
+	
+	<script src="https://www.restaurantemadero.com.br/assets/geral/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="https://www.restaurantemadero.com.br/assets/site/lib/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+    <script src="https://www.restaurantemadero.com.br/assets/geral/datetimepicker-master/build/jquery.datetimepicker.full.js" type="text/javascript"></script>
+	<script src="https://www.restaurantemadero.com.br/assets/site/js/jquery.formalize.js"></script>
+	<style>
+        @media screen and (min-width: 480px) { 
+            #pagina-restaurante-detalhes #main #foto-restaurante {
+                height: 90vh;
+            }
+        }
+        #home #slide-3 .bcg {
+            background-image: url('https://master.restaurantemadero.com.br/assets/site/images/cms/5.jpg');
+        }
+        #o-chef #hero .bcg {
+            background-image: url('https://www.restaurantemadero.com.br/assets/site/images/bcg_o_chef-novo.jpg');
+        }
+        #o-chef .junior .photo {
+            background-image: url('https://www.restaurantemadero.com.br/assets/site/images/junior_durski-novo.jpg');
+        }
+        #arquitetura #hero .bcg {
+            background-image: url('https://www.restaurantemadero.com.br/assets/site/images/bcg_arquitetura01-novo.jpg');
+        }
+        #arquitetura #arquitetura-block-02 .bcg {
+            background-image: url('https://www.restaurantemadero.com.br/assets/site/images/bcg_arquitetura02-novo.jpg');
+        }
+        #arquitetura #arquitetura-block-03 .bcg {
+            background-image: url('https://www.restaurantemadero.com.br/assets/site/images/bcg_arquitetura03-novo.jpg');
+        }
+        #arquitetura #arquitetura-block-04 .bcg {
+            background-image: url('https://www.restaurantemadero.com.br/assets/site/images/bcg_arquitetura04-novo.jpg');
+        }
+        #arquitetura #arquitetura-block-05 .bcg {
+            background-image: url('https://www.restaurantemadero.com.br/assets/site/images/bcg_arquitetura05-novo.jpg');
+        }
+        #arquitetura #arquitetura-block-06 .bcg {
+            background-image: url('https://www.restaurantemadero.com.br/assets/site/images/bcg_arquitetura06-novo.jpg');
+        }
+
+        @media screen and (min-width: 480px) {
+            #faixa-locator #lista-restaurantes .nome a {
+                color: #fff;
+                text-decoration: none;
+            }
+            #arquitetura #hero .intro {
+                width: 450px !important;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            #faixa-locator #lista-restaurantes .nome a {
+                color: #d5c06b;
+            }
+            #faixa-home #faixa-locator #lista-restaurantes ul.bxslider li .dados p {
+                clear: both;
+            }
+            #arquitetura #hero .intro h1, #arquitetura #hero .intro p {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+
+        /*
+        
+        #faixa-locator #lista-restaurantes .nome a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .wrap #topo .menu-mobile .languages {
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+        .wrap #topo .menu-mobile .languages a.ativa {
+            background-color: #d5c06b;
+            color: #000;
+        }
+        .wrap #topo .menu-mobile .languages a {
+            border: 2px solid #d5c06b;
+            color: #fff;
+            border-radius: 50%;
+            width: 38px;
+            line-height: 34px;
+            display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+            margin-right: 8px;
+        }
+
+        #pagina-restaurante-detalhes #main #localizacao .texto-mapa .bandeiras img {
+            margin: 0 5px 5px 0;
+        }
+		#pagina-restaurante-detalhes #main #localizacao .texto-mapa dl, #pagina-restaurante-detalhes #main #localizacao .texto-mapa dl p { 
+			color: #fff; 
+			line-height: 23px; 
+		}
+		#pagina-restaurante-detalhes #main #localizacao .texto-mapa dl p strong{
+			color: #d5c06b;
+			font-weight: 300;
+		}
+		
+		@media screen and (min-width: 480px) {
+			#arquitetura #hero .intro {
+				width: 450px;
+			}
+
+            #pagina-restaurante-detalhes #main #localizacao .fone-end .endereco .como-chegar {
+                display: none;
+            }
+		}
+		@media screen and (max-width: 480px) {
+			#arquitetura #hero .intro h1, #arquitetura #hero .intro p {
+				font-size: 28px;
+				line-height: 36px;
+			}
+
+            #pagina-restaurante-detalhes #main #localizacao .fone-end .endereco .como-chegar {
+                display: block;
+                font-size: 12px;
+                text-align: center;
+                display: inline-block;
+                color: #fff;
+                padding: 10px 40px;
+                border: 3px solid #fff;
+                margin: 35px 0 25px;
+            }
+		}
+        */
+	</style>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,
+    f);
+    })(window,document,'script','dataLayer','GTM-TKCQJTH');</script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+    var cfg_social = {"fb":"https:\/\/www.facebook.com\/maderobrasil\/","fb_ios":"fb:\/\/profile\/209635072439864","fb_android":"fb:\/\/page\/209635072439864","ig":"https:\/\/www.instagram.com\/maderobrasil\/","ig_ios":"instagram:\/\/user?username=maderobrasil","ig_android":"intent:\/\/instagram.com\/_u\/maderobrasil\/#Intent;package=com.instagram.android;scheme=https;end","tw":"https:\/\/twitter.com\/maderobrasil","tw_ios":"twitter:\/\/user?screen_name=maderobrasil","tw_android":"twitter:\/\/user?screen_name=maderobrasil"};
+    </script>
+
+</head>
+<body class="loading"><a name="voltatopo"></a>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKCQJTH"
+    height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <span class="hide" id="base_url">https://www.restaurantemadero.com.br/</span>
+    <span class="hide" id="no_sigla">pt</span>
+	<div id="preload">
+		<img src="https://www.restaurantemadero.com.br/assets/site/images/sprite.png">
+	</div>
+	 	
+
+  <style>
+    .select2-results .select2-result-label {
+      font-size: 10px;
+    }
+  </style>
+  <script src="https://www.restaurantemadero.com.br/assets/site/lib/jquery.mask.min.js"></script>
+    <script> var allowedTimes = ['01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00','13:00','15:00','17:00','17:00','17:20','19:00','20:00', '21:00', '22:00', '23:00', '00:00']; </script>
+    <div class="wrap" id="pagina-restaurante-detalhes">
+    <div class="logo-mobile">
+	<h1><a href="https://www.restaurantemadero.com.br/home">Madero</a></h1>
+</div>
+
+<div id="topo">
+	<div class="container">
+		<div class="menu">
+		                    <div id="title"><h2>MADERO</h2></div>
+                <div class="logo-madero"><a href="https://www.restaurantemadero.com.br/pt/home">Madero</a></div>
+            			<ul>
+															<li class="menu-item"><a href="/">Home</a></li>
+																				<li class="menu-item"><a href="/madero">O Madero</a></li>
+																				<li class="menu-item"><a href="/restaurante">Restaurantes</a></li>
+																				<li class="menu-item"><a href="/cardapio">Cardápio</a></li>
+																				<li class="menu-item">
+							<div class="dropdown">
+							  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Benefícios							    <span class="caret"></span>
+							  </button>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  								    	<a class="dropdown-item" href="/promocao"><strong>Promoções</strong></a>
+															    	<a class="dropdown-item" href="/fidelidade"><strong>Madero Fidelidade</strong></a>
+															    	<a class="dropdown-item" href="/valepresente"><strong>Vale-presente</strong></a>
+															  </div>
+							</div>
+						</li>
+																				<li class="menu-item"><a href="/contato/trabalhe">Trabalhe conosco</a></li>
+												</ul>
+            		</div>
+	</div>
+	<div class="menu-mobile">
+		<a class="abrir-mobile">
+			<div class="linha-1"></div>
+			<div class="linha-2"></div>
+			<div class="linha-3"></div>
+			Abrir Mobile
+		</a>
+		<div class="menu-aberto">
+		    <div id="title"><h1>MADERO</h1></div>
+			<div class="logo-madero clearfix"><a href="https://www.restaurantemadero.com.br/pt/home">Madero</a></div>
+			<ul>
+                															<li class="menu-item"><a href="/">Home</a></li>
+																				<li class="menu-item"><a href="/madero">O Madero</a></li>
+																				<li class="menu-item"><a href="/restaurante">Restaurantes</a></li>
+																				<li class="menu-item"><a href="/cardapio">Cardápio</a></li>
+																				<li class="menu-item">
+						    <a>Benefícios</a>
+					    </li>
+					  						  		<li class="menu-item submenu">
+					    		<a class="dropdown-item" href="/promocao">Promoções</a>
+					    	</li>
+											  		<li class="menu-item submenu">
+					    		<a class="dropdown-item" href="/fidelidade">Madero Fidelidade</a>
+					    	</li>
+											  		<li class="menu-item submenu">
+					    		<a class="dropdown-item" href="/valepresente">Vale-presente</a>
+					    	</li>
+																										<li class="menu-item"><a href="/contato/trabalhe">Trabalhe conosco</a></li>
+									
+				<!-- <li class="menu-item"><a href="http://maderodelivery.com.br" target="_blank">Delivery (Curitiba)</a></li>  -->
+
+				<li class="menu-item"><a href="https://www.restaurantemadero.com.br/pt/contato">Fale Conosco</a></li>
+				<li class="menu-item"><a href="https://www.restaurantemadero.com.br/pt/novidade">Novidades</a></li>
+				<li class="menu-item"><a href="https://master.restaurantemadero.com.br/assets/site/arquivos/madero-tabela-nutricional.pdf?mod=" target="_blank">Tabela nutricional</a></li>
+			</ul>
+            		</div>
+	</div>
+</div>
+<span class="hide" id="img_url">https://master.restaurantemadero.com.br/</span>        <div id="main" itemscope itemtype="http://schema.org/LocalBusiness">
+         <span itemprop="url" class="hide">https://www.restaurantemadero.com.br/pt/restaurante/ms/campo-grande/madero-steak-house-shopping-campo-grande-pt</span>   
+         <div id="foto-restaurante">
+             
+                      <div class="background-image toggle-image show" style="background-image: url(''); z-index: -1;"><img itemprop="image" src="https://master.restaurantemadero.com.br/upload/galeria-foto/45/1600x900pxsteakhouse-shopping-campo-grande-1600x900-01.jpg" alt="" title="" style="display: block; width: 100vw; height: 100vh; object-fit: cover; z-index: -1"></div>
+                      <div class="background-image toggle-image show" style="background-image: url(''); z-index: -1;"><img itemprop="image" src="https://master.restaurantemadero.com.br/upload/galeria-foto/45/1600x900pxsteakhouse-shopping-campo-grande-1600x900-02.jpg" alt="" title="" style="display: block; width: 100vw; height: 100vh; object-fit: cover; z-index: -1"></div>
+                      <div class="background-image toggle-image show" style="background-image: url(''); z-index: -1;"><img itemprop="image" src="https://master.restaurantemadero.com.br/upload/galeria-foto/45/1600x900pxsteakhouse-shopping-campo-grande-1600x900-03.jpg" alt="" title="" style="display: block; width: 100vw; height: 100vh; object-fit: cover; z-index: -1"></div>
+                       
+          <div id="box-reserva">
+            <form id="fazer-reserva" class="container " method="post">
+
+              
+                    <div id="open" class="hide"></div>
+            </form>
+                
+            <div id="sucesso-reserva" class="center-block fluid-container none">
+              <div class="row">
+                <div class="col-md-9">
+                            <h3>Sua reserva foi realizada <b>com sucesso!</b></h3>                </div>
+                <div class="col-md-3">
+                  <a href="javascript:">Fazer outra reserva</a>
+                </div>
+              </div>
+            </div>
+                
+            <div id="erro-reserva" class="center-block fluid-container none">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3><em>Ops!</em> Ocorreu um problema ao fazer a sua reserva.</h3>
+                  <p>Por favor, aguarde alguns instantes e <a href="javascript:" id="tente-novamente">tente novamente</a>.</p>
+                </div>
+                <div class="col-md-3">
+                  <p class="faixa">Se preferir, envie uma mensagem para nós.</p>
+                </div>
+                <div class="col-md-3">
+                  <a href="https://www.restaurantemadero.com.br/contato">Enviar mensagem</a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+             
+            <div class="container nome-wrapper">
+                <h2 class="nome-sobre-foto" itemprop="name">
+                    Madero Steak House Shopping Campo Grande                    <span>Cidade Jardim</span>
+                </h2>
+            </div>
+                         
+                        <div class="bolas" data-group="toggle-image">
+                <a class="bola on" href="#"></a>
+                <a class="bola" href="#"></a>
+                <a class="bola" href="#"></a>
+            </div>
+                         
+          <div id="tag-menu">
+            <ul class="center-block">
+                    <li class="active">
+              <a class="localizacao" href="#localizacao" data-toggle="tab">Localização</a></li>
+                    <li><a class="cardapio" href="#cardapio" data-toggle="tab">Cardápio</a></li>
+
+                    <script>
+                    var map_loaded;
+                    setInterval(function () {
+                        if (!map_loaded && $('#mapa').is(':visible')) {
+                            var lat = -20.458342, lng = -54.587912;
+                            var map = new google.maps.Map(document.getElementById('mapa'), {
+                                zoom: 16,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                scrollwheel: false,
+                                center: {lat: lat, lng: lng}
+                            });
+                            var icon = new google.maps.MarkerImage(
+                                "https://www.restaurantemadero.com.br/assets/site/images/sprite.png", new google.maps.Size(37, 57), new google.maps.Point(293, 242));
+                            marker = new google.maps.Marker({
+                                position: new google.maps.LatLng(lat, lng),
+                                map: map,
+                                icon: icon
+                            });
+    
+//                            $('.slider').bxSlider({
+//                                controls: true,
+//                                pager: false,
+//                                mode: 'horizontal',
+//                                auto: false,
+//                            });
+                            map_loaded = true;
+                        }
+                    }, 100);
+                    </script>
+            </ul>
+          </div>
+         </div>
+            
+         <div class="tab-content">
+            <div id="localizacao" class="tab-pane fade in active">
+                <div class="fone-end">
+                    <div class="container">
+                        <div class="texto-tm visible-xs-block visible-sm-block">
+                            <p><p><span id="docs-internal-guid-437cdb65-f9ec-8ba4-d40c-71a0cd005895"><span>O Madero Steak House oferece um card&aacute;pio criativo num ambiente &uacute;nico. N&atilde;o deixe de experimentar as receitas mais famosas do Chef Junior Durski, como o Palmito Assado, o Cheeseburger, o L&rsquo;Entrec&ocirc;te e o Petit G&acirc;teau de Doce de Leite.</span></span></p>
+<p><span>Somos obstinados a atender bem, e entendemos que a melhor e mais democr&aacute;tica op&ccedil;&atilde;o &eacute; recebermos nossos clientes por ordem de chegada, por isso optamos por n&atilde;o trabalhar com reservas de mesas. Grandes grupos s&atilde;o sempre muito bem-vindos, por&eacute;m pedimos que pelo menos a metade dele esteja presente no momento da ocupa&ccedil;&atilde;o. Nosso trabalho e nossa dedica&ccedil;&atilde;o s&atilde;o para que todos tenham a melhor experi&ecirc;ncia conosco.</span></p></p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-lg-offset-1 fone">
+                                <div class="icone"></div>
+                                <div class="texto" itemprop="telephone">(67) 3326-2361</div>
+                            </div>
+                            <div class="col-lg-5 endereco">
+                                <div class="icone"></div>
+                                <div class="texto" itemprop="address">Av. Afonso Pena, 4909 – Cidade Jardim, Campo Grande – MS, 79031-900</div>
+                                <div class="text-center">
+                                    <a href="#" target="_blank" class="como-chegar"
+                                        data-texto="Madero Steak House Shopping Campo Grande"
+                                        data-lat="-20.458342"
+                                        data-lng="-54.587912">COMO CHEGAR</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container texto-mapa">
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-offset-1">
+                            <div class="texto hidden-xs hidden-sm" itemprop="description">
+                                <p><p><span id="docs-internal-guid-437cdb65-f9ec-8ba4-d40c-71a0cd005895"><span>O Madero Steak House oferece um card&aacute;pio criativo num ambiente &uacute;nico. N&atilde;o deixe de experimentar as receitas mais famosas do Chef Junior Durski, como o Palmito Assado, o Cheeseburger, o L&rsquo;Entrec&ocirc;te e o Petit G&acirc;teau de Doce de Leite.</span></span></p>
+<p><span>Somos obstinados a atender bem, e entendemos que a melhor e mais democr&aacute;tica op&ccedil;&atilde;o &eacute; recebermos nossos clientes por ordem de chegada, por isso optamos por n&atilde;o trabalhar com reservas de mesas. Grandes grupos s&atilde;o sempre muito bem-vindos, por&eacute;m pedimos que pelo menos a metade dele esteja presente no momento da ocupa&ccedil;&atilde;o. Nosso trabalho e nossa dedica&ccedil;&atilde;o s&atilde;o para que todos tenham a melhor experi&ecirc;ncia conosco.</span></p></p>
+                            </div>
+                            <div class="tit horario">
+                                <div class="icone"></div>
+                                HORÁRIO <strong>DE FUNCIONAMENTO</strong>                            </div>
+                            <dl itemprop="openingHours">
+                                <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;SEGUNDA-QUINTA&quot;}" data-sheets-userformat="{&quot;2&quot;:14784,&quot;9&quot;:0,&quot;10&quot;:1,&quot;11&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" style="color: #ffffff;">SEGUNDA A QUINTA</span></p>
+<p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;SEGUNDA-QUINTA&quot;}" data-sheets-userformat="{&quot;2&quot;:14784,&quot;9&quot;:0,&quot;10&quot;:1,&quot;11&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" style="color: #ffffff;">11:45 - 22:30</span></p>
+<p><span style="color: #ffffff;">SEXTA E&nbsp;S&Aacute;BADO</span></p>
+<p><span style="color: #ffffff;">11:45 -&nbsp;&nbsp;23:30</span></p>
+<p><span style="color: #ffffff;">DOMINGO E FERIADOS</span></p>
+<p><span style="color: #ffffff;">11:45 - &nbsp;22:00</span></p>
+<p></p>                            </dl>
+                            <div class="tit cartoes">
+                                <div class="icone"></div>
+                                Aceitamos<strong>os Cartões:</strong>                            </div>
+                            <div class="bandeiras">
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/9/alelo_2017-06-29_16-12-02.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/4/american-express_2016-09-27_14-42-31.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/12/cabal_2017-06-29_16-23-43.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/1/diners-club-international_2016-09-27_14-40-15.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/13/elo_2017-06-29_16-23-57.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/15/maestro_2017-06-29_16-24-27.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/3/master-card_2016-09-27_14-41-58.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/16/sodexo_2017-06-29_16-24-37.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/17/ticket_2017-06-29_16-24-54.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/2/visa_2016-09-27_14-41-27.png" />
+                                                                  <img src="https://master.restaurantemadero.com.br/upload/cartao/19/vr_2017-06-29_16-25-49.png" />
+                                                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mapa-wrap">
+                               <div id="mapa"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                            </div>
+             
+            <div id="cardapio" class="tab-pane fade">
+               <div id="nome-restaurante">
+                   <div class="center-block" style="display:none;">
+                       <p><b>Uma experiência gastronômica única.</b></p><p>Confira tudo o que esse restaurante Madero oferece para surpreender seu paladar.</p>                   </div>
+               </div>
+               
+               <div id="produtos-categoria" class="none">
+                   <div class="titulo img-categoria" style="background-image: url(images/bcg_categoria.jpg)">
+                       <div class="center-block">
+                           <h3 class="titulo-categoria"></h3>
+                       </div>
+                   </div>
+                   <div id="produtos">
+                       <div class="center-block">
+                           <a class="fechar-categorias" href="#">X</a>
+                           <h4 class="descricao-categoria"></h4>
+                           <div class="produtos-lista fluid-container">
+                               <div class="itens-cardapio"></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               
+               <div id="lista-cardapio">
+                   <div class="center-block fluid-container" data-id="69">
+                       <div class="row">
+                             
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-02"></span>
+                                         <span>Happy hour</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="63">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-15"></span>
+                                         <span>Bebidas</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="33">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-02"></span>
+                                         <span>Bebidas Alcoólicas</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="89">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-19"></span>
+                                         <span>Saladas</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="73">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-08"></span>
+                                         <span>Entradas</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="52">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-09"></span>
+                                         <span>Massas</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="115">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-16"></span>
+                                         <span>Frango</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="58">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-18"></span>
+                                         <span>Peixe</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="113">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-07"></span>
+                                         <span>Carnes</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="116">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-01"></span>
+                                         <span>Cheeseburgers</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="117">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-20"></span>
+                                         <span>Sandwiches Fit</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="76">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-10"></span>
+                                         <span>Sandwiches Gourmet</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="77">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-04"></span>
+                                         <span>Kids</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="93">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-12"></span>
+                                         <span>Acompanhamentos</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="114">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-03"></span>
+                                         <span>Sobremesas</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="79">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                            
+                                                                <div class="item-cardapio col-sm-6">
+                                 <div class="border">
+                                     <p class="nome">
+                                         <span class="icone icone-17"></span>
+                                         <span>Carta de Vinhos</span>
+                                       </p>
+                                     <a class="abrir-categoria over-link" data-id="140">Veja mais detalhes</a>
+                                 </div>
+                             </div>
+                                                                                  </div>
+                   </div>
+               </div>
+               
+               <p></p>
+            </div>
+          </div>
+    </div>
+        
+    <div id="map" class="hide"></div>
+        
+    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVv9rWVyvd2sd9mHsNgQQiV8L6bacB8pc&libraries=places"></script>
+
+    <!-- <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://www.restaurantemadero.com.br/pt/restaurante/ms/campo-grande/madero-steak-house-shopping-campo-grande-pt",
+      "name": "Madero Steak House Shopping Campo Grande",
+      "address": "Av. Afonso Pena, 4909 – Cidade Jardim, Campo Grande – MS, 79031-900",
+      "description": 'O Madero Steak House oferece um cardápio criativo num ambiente único. Não deixe de experimentar as receitas mais famosas do Chef Junior Durski, como o Palmito Assado, o Cheeseburger, o L’Entrecôte e o Petit Gâteau de Doce de Leite.Somos obstinados a atender bem, e entendemos que a melhor e mais democrática opção é recebermos nossos clientes por ordem de chegada, por isso optamos por não trabalhar com reservas de mesas. Grandes grupos são sempre muito bem-vindos, porém pedimos que pelo menos a metade dele esteja presente no momento da ocupação. Nosso trabalho e nossa dedicação são para que todos tenham a melhor experiência conosco.',
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "(67) 3326-2361",
+      }
+    }
+    </script> -->
+
+
+    <script>
+      var base_url = $('#base_url').text();
+      var placeid = '';
+      var idioma = $('#no_sigla').text();
+        
+      $('#fazer-reserva .confirmar').click(function () {
+                
+                var field_nome = $('input[name="no_nome"]');
+                var field_email = $('input[name="no_email"]');
+                var field_telefone = $('input[name="no_telefone"]');
+                var field_data = $('select[name="dt_reserva"]');
+                var field_lugar = $('select[name="qtd_lugar"]');
+                var field_hora = $('select[name="no_horario"]');
+                var field_control = true;
+                
+                $(field_nome, field_email, field_telefone, field_data, field_lugar, field_hora).removeClass('verifique');
+                $('#verifique').hide();
+                $('#verifique').html('Verifique o(s) campo(s) assinalado(s)');
+                if(field_nome.val() == '' || field_nome.val() == field_nome.attr('placeholder')){
+                    field_control = false;
+                    field_nome.addClass('verifique');
+                    $('#verifique').show();
+                }
+                if(field_email.val() == '' || field_email.val() == field_email.attr('placeholder')){
+                    field_control = false;
+                    field_email.addClass('verifique');
+                    $('#verifique').show();
+                }
+                if(field_telefone.val() == '' || field_telefone.val() == field_telefone.attr('placeholder')){
+                    field_control = false;
+                    field_telefone.addClass('verifique');
+                    $('#verifique').show();
+                }
+                if(field_data.val() == '' || field_data.val() == field_data.attr('placeholder')){
+                    field_control = false;
+                    field_data.addClass('verifique');
+                    $('#verifique').show();
+                }
+                if(field_lugar.val() == '' || field_lugar.val() == field_lugar.attr('placeholder')){
+                    field_control = false;
+                    field_lugar.addClass('verifique');
+                    $('#verifique').show();
+                }
+               if(field_hora.val() == '' || field_hora.val() == null){
+                    field_control = false;
+                    field_hora.addClass('verifique');
+                   $('#verifique').show();
+                }
+                
+                if(field_control){
+                    $('#verifique').hide();
+                    $('#erro-reserva').hide();
+                    $('#sucesso-reserva').hide();
+                    var form = '#fazer-reserva';
+        
+                    $(form).ajaxForm({
+                        type: 'POST',
+                        dataType: 'json',
+                        data: $(form).serialize(),
+                        url:  base_url + idioma + '/restaurante/novareserva',
+                        success:  function(data){
+                                if(data.status == 200){
+                                    $('#sucesso-reserva').show();
+                                } else {
+                                    $('#erro-reserva').show();
+                                }
+
+                        },
+                    }).submit();
+                }
+                
+      });
+      
+      function atualizar_verificar() {
+        if ($('#fazer-reserva .verifique').length == 0) {
+          $('#verifique').hide();
+        }
+      }
+      
+      $('#fazer-reserva [name]').change(function () {
+        if ($(this).attr('name') !== 'hora') {
+          $(this).removeClass('verifique');
+        } else {
+          $('.select2-container .select2-choice').removeClass('verifique')
+        }
+        atualizar_verificar();
+      });
+      
+      $('#sucesso-reserva a').click(function () {
+        // apagar o form
+        $('#fazer-reserva').find('input[type=text], select').val('');
+              $('#fazer-reserva').find('input[type=checkbox]').removeProp('checked').change();
+              $('#horario-reserva, #qtd-lugar').each(function () {
+                $(this).html('<option value="">' + $(this).data('escolha') + '</option>');
+              });
+      
+        $('#fazer-reserva').show();
+        $('#sucesso-reserva').hide();
+      });
+      $('#tente-novamente').click(function () {
+        $('#fazer-reserva').show();
+        $('#erro-reserva').hide();
+      });
+      
+      function scrollToOpenTab(tabClass)
+      {
+          var $tab = $('#tag-menu .' + tabClass).click();
+          setTimeout(function () {
+              $('html, body').animate({scrollTop: $tab.offset().top +
+                    -$('#topo').height()});
+          }, 500);
+      }
+      
+      $(window).load(function () {
+          if (location.hash == '#como-chegar' || location.hash == '#ver-info') {
+              scrollToOpenTab('localizacao');
+          } else if (location.hash == '#ver-cardapio') {
+              scrollToOpenTab('cardapio');
+          }
+      });
+    
+
+      $(window).load(function(){
+        open(placeid);
+      });
+
+            // mensagens iniciais
+            $('#horario-reserva, #qtd-lugar').each(function () {
+                $(this).html('<option value="">' + $(this).data('escolha') + '</option>');
+            });
+            // carrega datas disponíveis
+            $('#data-reserva').load(base_url + idioma + '/restaurante/getDiasReserva/' + $('#api_id').val());
+            var msg_aguarde = 'Aguarde...';
+            // ao mudar data, carrega horarios
+      $('#data-reserva').change(function(){
+                $('#horario-reserva').html('<option value="">' + msg_aguarde + '</option>');
+                $('#qtd-lugar').html('<option value="">' + $('#qtd-lugar').data('escolha') + '</option>');
+                $('#horario-reserva').load(base_url + idioma + '/restaurante/getHorariosReserva/' + $('#api_id').val()
+                    + '?' + $('#data-reserva').serialize());
+      });
+            // ao mudar horario, carrega lugares
+            $('#horario-reserva').change(function () {
+                $('#qtd-lugar').html('<option value="">' + msg_aguarde + '</option>');
+                $('#qtd-lugar').load(base_url + idioma + '/restaurante/getLugaresReserva/' + $('#api_id').val()
+                    + '?' + $('#data-reserva, #horario-reserva').serialize());
+            });
+
+      $('.abrir-categoria').click(function(){
+
+        var cardapio_id = $(this).attr('data-id');
+        var grupo_id = 3;
+        
+        $.ajax({
+          url: base_url + idioma + '/cardapio/getItensCardapio/'+grupo_id+'/'+cardapio_id,
+          success: function (response) {
+            $('.produtos-lista, .titulo-categoria, .descricao-categoria').empty();
+            $('.titulo-categoria').append(response.categoria.no_categoria_cardapio);
+            $('.descricao-categoria').append(response.categoria.ds_categoria_cardapio);
+            $('.img-categoria').css( 'background-image', 'url("https://master.restaurantemadero.com.br/upload/categoria-cardapio/' + response.categoria.cd_categoria_cardapio + '/' + response.categoria.no_img_categoria_cardapio + '")');
+                                                $('.produtos-lista').append('<div class="itens-cardapio"></div>');
+            $.each( response.itens, function( key, kv ){
+                                                    if(key != '' || Object.keys(response.itens).length > 1 ){
+                                                        $('.itens-cardapio').append('<div class="subcategoria">' + key + '</div>');
+                                                    }
+                            $.each(kv, old_func);
+                    });
+                        function old_func(key, val) {
+                            var special = '';
+                            if(val.no_preco_especial != null)
+                                special = val.no_preco_especial;
+                            var span_preco;
+                            if (val.no_preco_desconto) {
+                                span_preco = '<span class="dp-wrap"><span class="de">' + val.no_preco + '</span>'
+                                    + '<span class="por">' + val.no_preco_desconto + '</span></span>';
+                            } else {
+                                span_preco = val.no_preco;
+                            }
+                        $('.itens-cardapio:last-of-type').append(
+                                '<div class="item-produto">'
+                                + '<a><span class="texto">'+ val.no_item_cardapio +'</span><span><span class="tip" data-toggle="tooltip" data-placement="top" title="'+ val.no_label_especial +'">'+ special +'</span></span>'
+                                + '<span class="preco">'+ span_preco +'</span></a>'
+                                + '</div>'
+                            );
+                            $('.itens-cardapio:last-of-type [data-toggle="tooltip"]').tooltip();
+                        }
+          }
+        }); 
+      });
+    </script>
+
+	<div id="rodape">
+        
+		<div id="faixa-best">
+			<div class="container">
+				<div class="row">
+					<div class="best col-md-5"></div>
+					<div class="links hidden-xs hidden-sm col-md-6">
+                        <!-- FACEBOOK -->
+                        <a href="https://www.facebook.com/maderobrasil/" target="_blank" class="social">
+                            <svg version="1.1"
+                                 xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns:a="https://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                 x="0px" y="0px" width="38.03px" height="37.97px" viewBox="0 0 38.03 37.97" enable-background="new 0 0 38.03 37.97"
+                                 xml:space="preserve" fill="#d5c06b">
+                            <defs>
+                            </defs>
+                            <path id="facebook" d="M19,0C8.5,0,0,8.5,0,19c0,10.47,8.5,18.97,19,18.97S38.03,29.47,38.03,19c0-10.5-8.5-19-19-19H19z M23.5,13.12h-2.85
+                                c-0.34,0-0.7,0.44-0.7,1.04v2.06h3.56v2.94h-3.55v8.82h-3.38v-8.82H13.5v-2.94h3.06V14.5c0-2.5,1.73-4.5,4.1-4.5h2.85v3.12H23.5z"/>
+                            </svg>
+                        </a>
+                        <!-- INSTAGRAM -->
+                        <a href="https://www.instagram.com/maderobrasil/" target="_blank" class="social">
+                            <svg version="1.1"
+                                 xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns:a="https://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                 x="0px" y="0px" width="38px" height="37.96px" viewBox="0 0 38 37.96" enable-background="new 0 0 38 37.96" xml:space="preserve"  fill="#d5c06b">
+                            <defs>
+                            </defs>
+                            <path id="instagram" d="M19,22.78c2.1,0,3.8-1.7,3.8-3.8c0-0.83-0.27-1.6-0.7-2.2c-0.7-0.97-1.83-1.6-3.1-1.6s-2.4,0.63-3.08,1.6
+                                c-0.46,0.6-0.72,1.37-0.72,2.2C15.2,21.08,16.9,22.78,19,22.78z M27.3,14.33v-3.66h-0.47l-3.2,0.02l0.03,3.63h3.65L27.3,14.33z
+                                 M19,0C8.52,0,0,8.52,0,18.98c0,10.47,8.52,18.98,19,18.98s19-8.5,19-18.98C38,8.52,29.48,0,19,0z M29.8,25.6
+                                c0,2.3-1.87,4.17-4.17,4.17H12.37c-2.3,0-4.17-1.86-4.17-4.17V12.36c0-2.3,1.87-4.17,4.17-4.17h13.26c2.3,0,4.18,1.85,4.18,4.15
+                                V25.6H29.8z M24.9,18.98c0,3.25-2.64,5.9-5.9,5.9s-5.9-2.65-5.9-5.9c0-0.78,0.15-1.53,0.42-2.2H10.3v8.82
+                                c0,1.15,0.93,2.07,2.07,2.07h13.26c1.14,0,2.07-0.92,2.07-2.07v-8.84h-3.23c0.28,0.7,0.44,1.44,0.44,2.22L24.9,18.98z"/>
+                            </svg>
+                        </a>
+					</div>
+                    <!-- .links xs-hidden col-md-5 -->
+				</div>
+                <!-- .row -->
+			</div>
+		</div>
+        <!-- .faixa-best -->
+
+		<div id="footer">
+			<div class="row mapanews">
+				<div class="col-sm-8 col-sm-offset-2 ">
+					<div class="mapasite">
+						<div class="row">
+							<dl class="col-sm-3">
+								<dt><a href="https://www.restaurantemadero.com.br/pt/madero">O Madero</a></dt>
+								<dd><a href="https://www.restaurantemadero.com.br/pt/madero/chef">O Chef detalhista</a></dd>
+								<dd><a href="https://www.restaurantemadero.com.br/pt/madero/arquitetura">Arquitetura</a></dd>
+								<!-- <dd><a href="https://www.restaurantemadero.com.br/pt/madero/evento">Seu evento no Madero</a></dd> -->
+								<dd><a href="https://www.restaurantemadero.com.br/pt/novidade">Madero na Mídia</a></dd>
+							</dl>
+							<dl class="col-sm-3">
+								<dt><a href="https://www.restaurantemadero.com.br/pt/restaurante">Restaurantes</a></dt>
+								<dd><a href="https://www.restaurantemadero.com.br/pt/restaurante">Restaurantes próximos</a></dd>
+								<dt><a href="https://www.restaurantemadero.com.br/pt/cardapio">Cardápio</a></dt>
+                                
+								<dd><a href="https://master.restaurantemadero.com.br/assets/site/arquivos/madero-tabela-nutricional.pdf?mod=1499543609" target="_blank">Tabela nutricional</a></dd>
+                                
+							</dl>
+							<dl class="col-sm-3">
+								<dt><a href="https://www.restaurantemadero.com.br/pt/novidade">Novidades</a></dt>
+								<dt><a href="https://www.restaurantemadero.com.br/pt/promocao">Promoções</a></dt>
+								                                <!-- <dt><a href="http://maderodelivery.com.br" target="_blank">Delivery (Curitiba)</a></dt> -->
+							</dl>
+							<dl class="col-sm-3">
+								<dt><a href="https://www.restaurantemadero.com.br/pt/fidelidade">Madero fidelidade</a></dt>
+                                                                <dt><a href="https://www.restaurantemadero.com.br/pt/contato">Fale Conosco</a></dt>
+                                <dt><a href="https://www.restaurantemadero.com.br/pt/contato/trabalhe">Trabalhe Conosco</a></dt>
+							</dl>
+						</div>
+					</div>
+                    <!-- .mapasite -->
+                </div>
+                <!-- .col-sm-8 col-sm-offset-2 -->
+                <div class="col-sm-10 col-sm-offset-1">
+					<div class="newsletter container-fluid">
+						<div class="row">
+							<div class="cadastro-news">
+                                <div class="row">
+                                    <div class="col-sm-7 col-sm-offset-3">
+                                        <p class="assine">Assine para Receber novidades: Inaugurações, Novos Pratos, Promoções e Eventos.</p>
+                                        <form id="formulario-newsletter" class="fluid-container">
+                                            <div class="row">
+                                                <div class="input-item col-xs-12 col-sm-5">
+													<input name="no_nome" class="input-campo" type="text" placeholder="Seu Nome" />
+												</div>
+												<div class="input-item col-xs-12 col-sm-5">
+													<input name="no_email" class="input-campo" type="text" placeholder="Seu E-mail" />
+												</div>
+                                                <div class="input-enviar col-xs-12 col-sm-1">
+                                                    <a id="btn-enviar-newsletter">OK</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="col-sm-10">
+                                            <p class="termos"><span><a href="https://www.restaurantemadero.com.br/pt/termo">Termos de uso e</a> <a href="https://www.restaurantemadero.com.br/pt/politica">política de privacidade.</a></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="voltar-topo col-md-2"><a></a></div>
+                                </div>
+							</div>
+						</div>
+					</div>
+					<div class="logosocial hidden-sm hidden-md hidden-lg">
+						<div class="social">
+							<a class="ico fb" href="https://www.facebook.com/maderobrasil/" target="_blank">Facebook</a>
+							<a class="ico is" href="https://www.instagram.com/maderobrasil/" target="_blank">Instagram</a>
+						</div>
+					</div>
+				</div>
+                <!-- .col-sm-10 col-sm-offset-1 -->
+			</div>
+            <!-- .row mapanews -->
+	    </div>
+        <!-- .footer -->
+	</div>
+
+	<!-- parallax -->
+    <script src="https://www.restaurantemadero.com.br/assets/site/lib/parallax/imagesloaded.js"></script>
+	<script src="https://www.restaurantemadero.com.br/assets/site/lib/parallax/skrollr.js"></script>
+	<script src="https://www.restaurantemadero.com.br/assets/site/lib/parallax/_main.js"></script>
+	<!-- Select2 -->
+	<script type="text/javascript" src="https://www.restaurantemadero.com.br/assets/site/lib/select2/select2.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://www.restaurantemadero.com.br/assets/site/lib/bootstrap/js/bootstrap.min.js"></script>
+	<!-- bxSlider -->
+	<script src="https://www.restaurantemadero.com.br/assets/site/lib/bxslider/jquery.bxslider.js"></script>
+	<!-- NOTIFY -->
+    <script src="https://www.restaurantemadero.com.br/assets/geral/js/notify.js"></script>
+	<!-- MASK -->
+    <script src="https://www.restaurantemadero.com.br/assets/geral/js/masks.js"></script>
+    <script src="https://www.restaurantemadero.com.br/assets/geral/js/maskedinput.js"></script>
+    <!-- AJAX LOADING -->
+	<script src="https://www.restaurantemadero.com.br/assets/geral/js/ajax-loading.js"></script>
+	<!-- PLUGIN AJAX FORM -->
+	<script src="https://www.restaurantemadero.com.br/assets/geral/js/ajax_form.js"></script>
+	<!-- parallax -->
+	<script src="https://www.restaurantemadero.com.br/assets/site/lib/parallax/modernizr-2.7.1.min.js"></script>
+	<script type="text/javascript" src="https://www.restaurantemadero.com.br/assets/site/js/scripts.js?x=696addbc58ad0c6609df2266b75ccc19"></script>
+	<script type="text/javascript" src="https://www.restaurantemadero.com.br/assets/site/lib/script.js?x=bc8b75061295d28170f150fedbd4ad81"></script>
+                <script type="text/javascript" src="https://www.restaurantemadero.com.br/assets/site/js/carousel.js"></script>
+        	<!-- API Google Maps (Key: AIzaSyBvTpqGQHd2UnwWIH-eua9E9yJO08TH95g || AIzaSyDVv9rWVyvd2sd9mHsNgQQiV8L6bacB8pc) -->
+	<!-- <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVv9rWVyvd2sd9mHsNgQQiV8L6bacB8pc&libraries=places&callback=initMap"></script> -->
+    </body>
+</html>

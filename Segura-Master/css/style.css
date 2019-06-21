@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    
+}
+header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+div#content-banner {
+    color: #FFF;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color:#d8bcff;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.title-banner {
+    display: inline-block;
+    margin-right: 5%;
+}
+.menu-banner {
+    display: inline-block;
+    margin-left: 5%;
+}
+.menu-banner a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 15px;
+}
+.menu-banner a:hover {
+    color: #FFF;
+    background-color:#dfd5ed;
+    border-radius: 10px;
+}
+.description-banner {
+    text-align: center;
+    font-style: italic;
+}
+.title-banner p{
+    font-family: 'PT Mono', monospace;
+    margin: 15px 0;
+    font-size: 42px;
+
+} 
+.icons-banner img {
+    margin: 0 3px;
+    background-color: #d8bcff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+}
+.sociais img:hover,
+.icons-banner img:hover {
+    background-color: #bbd8de;
+}
+.box-content {
+    text-align: center;
+    padding: 20px 25px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bg-grey {
+    background-color:white;
+}
+p.title-section {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.box-content img {
+    background-color:#d8bcff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    width: 25%;
+    height: auto;
+}
+p.box-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+p.box-description {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+section#content-team {
+    padding: 40px 100px 35px;
+    background-color:#d8bcff;
+    padding-top: 7%;
+}
+section#content-team .horizontal {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+#content-team .box-content {
+    text-align: center;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#content-team .box-content img {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #bbd8de;
+    width: 130px;
+}
+section#nos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 60px 120px 50px;
+    padding-top: 10%;
+}
+section#nos>div {
+    width: 50%;
+    text-align: center;
+}
+.content-nos p.box-title {
+    margin-top: 0;
+}
+.content-nos {
+    padding-right: 30px;
+}
+#rodape{
+    padding: 40px 0px;
+    padding-top: 10%;
+}
+
+#rodape>div {
+    text-align: center;
+}
+#rodape .rodape-description {
+    padding: 0 100px;
+    font-style: italic;
+}
+
+.sociais img {
+    background-color: #9999;
+    width: 18px;
+    margin: 0 2px;
+    border-radius: 50%;
+    padding: 5px;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+footer div a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #999;
+}
+footer {
+    background-color: #d8bcff;
+    padding: 25px 0 20px;
+}
+#rodape.download{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+footer img {
+    width: 45px;
+}
+.box-content>div {
+    max-width: 50%;
+}
+#img-banner{
+    padding-top: 10%;
+    margin-left: 11%;
+}
+p.box-description2{
+    text-align: left;
+}
+

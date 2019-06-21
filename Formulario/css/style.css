@@ -1,0 +1,27 @@
+form{
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1.5%;
+  margin-top: -5%;
+}
+#back{
+  background-color: #0FDDEA;
+  margin-top: 2.5%;
+}
+body{
+  background-color:#0FDDEA !important;
+}
+
+.btn:hover{
+  background:#2E9AFE;
+  color: #fff;
+  box-shadow: 0 5px 0 #2E9AFE;
+}
+.btn:active{
+  position: relative;
+  top:5px;
+  box-shadow: none;
+}

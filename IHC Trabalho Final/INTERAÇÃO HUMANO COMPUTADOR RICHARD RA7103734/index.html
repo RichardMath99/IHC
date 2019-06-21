@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <script  src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+      <title>Busca Food</title>
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div class="navbar-fixed">
+          <nav class="teal">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#home" class="brand-logo">Busca Food</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                 <ul class="right hide-on-med-and-down">
+                  <li>
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#search">Busca</a>
+                  </li>
+                  <li>
+                    <a href="#popular">Lugares populares</a>
+                  </li>
+                  <li>
+                    <a href="#gallery">Galeria</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#search">Busca</a>
+          </li>
+          <li>
+            <a href="#popular">lugares populares</a>
+          </li>
+          <li>
+            <a href="#gallery">Galeria</a>
+          </li>
+          <li>
+            <a href="#contact">Contato</a>
+          </li>
+        </ul>
+
+        <!-- Section: Slider -->
+        <section id="home" class="slider scrollspy">
+          <ul class="slides">
+            <li>
+              <img src="img/rest-dark.jpg" alt="">
+              <div class="caption center-align">
+                <h2>Restaurantes Pop Up</h2>
+                <h5 class="light grey-text text-lighten-3 hide-on-small-only">Uma tendência que desembarca no Brasil a passos lentos, já está presente no dia a dia de muitos países da Europa. </h5>
+                <a href="https://blog.lojabrazil.com.br/restaurantes-tipos-e-conceitos/" class="btn btn-large">Saiba mais...</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/rest-dark.jpg" alt="">
+              <div class="caption left-align">
+                <h2>Restaurante Buffet</h2>
+                <h5 class="light grey-text text-lighten-3 hide-on-small-only">Conceito que vem desde a Idade Média, ainda hoje continua sendo uma das escolhas mais populares para muitos clientes.</h5>
+                <a href="https://blog.lojabrazil.com.br/restaurantes-tipos-e-conceitos/" class="btn btn-large">Saiba mais...</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/foodtruck.jpg" alt="">
+              <div class="caption right-align">
+                <h2>Food Truck</h2>
+                <h5 class="light grey-text text-lighten-3 hide-on-small-only">A grande tendência popular são os restaurantes de “caminhões de alimentos” móveis. Estes conseguem atingir um grande número de público com alimentos de baixo custo.</h5>
+                <a href="https://blog.lojabrazil.com.br/restaurantes-tipos-e-conceitos/" class="btn btn-large">Saiba Mais...</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section: Search -->
+        <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h3>Prato ou Restaurante</h3>
+                <div class="input-field">
+                  <input class="white grey-text autocomplete" placeholder="MC Donalds, Madeiro, Pizza, hambúrguer, etc ..." type="text" id="autocomplete-input">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Icon Boxes -->
+        <section class="section section-icons grey lighten-4 center">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m4">
+                <div class="card-panel hoverable">
+                  <a href="https://www.viagemegastronomia.com.br/gastronomia/dez-novos-restaurantes-sp/" target="_blank">
+                  <i class="material-icons large teal-text">room</i>
+                  </a>
+                  <h4>Proximos</h4>
+                  <p></p>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <div class="card-panel hoverable">
+                  <a href="https://www.tripadvisor.com.br/Restaurants-g1162161-Sao_Caetano_do_Sul_State_of_Sao_Paulo.html" target="_blank">
+                  <i class="material-icons large teal-text">store</i>
+                  </a>
+                  <h4>Lançamento</h4>
+                  <p></p>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <div class="card-panel hoverable">
+                  <a href="https://www.tripadvisor.com.br/Restaurants-g303631-zfp16-Sao_Paulo_State_of_Sao_Paulo.html"target="_blank">
+                  <i class="material-icons large teal-text">attach_money</i>
+                  </a>
+                  <h4>Bons e Baratos</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Popular -->
+        <section id="popular" class="section section-popular scrollspy">
+          <div class="container">
+            <div class="row">
+              <h4 class="center">
+                <span class="teal-text">Lugares</span> Populares</h4>
+              <div class="col s12 m4">
+                <a href="https://www.mcdonalds.com.br/" target="_blank">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="img/mc.jpg" alt="">
+                    <span class="card-title">MC Donalds</span>
+                  </div>
+                  <div class="card-content">
+                    <p>McDonald's Corporation é a maior cadeia mundial de restaurantes de fast food de hambúrguer, servindo cerca de 68 milhões de clientes por dia em 119 países através de 37 mil pontos de venda.
+                    </p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <a href="http://www.burgerking.com.br/" target="_blank">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="img/bk.jpeg" alt="">
+                    <span class="card-title">Burger King</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Burger King, muitas vezes abreviado como BK, é uma rede de restaurantes especializada em fast-food, fundada nos Estados Unidos por James McLamore e David Edgerton.
+                    </p>
+                  </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <a href="https://www.bobs.com.br/" target="_blank">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="img/bobs.jpg" alt="">
+                    <span class="card-title">Bobs</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Bob's é uma rede de restaurantes de comida rápida brasileira, fundada em 1952, pelo jogador de tênis estadunidense-brasileiro Robert Falkenburg, campeão do torneio de Wimbledon em 1948 e 1949.
+                    </p>
+                  </div>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 center">
+                <a href="#contact" class="btn btn-large grey darken-3">
+                  <i class="material-icons left">send</i>Entre em contato
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Follow -->
+        <section class="section section-follow teal darken-2 white-text center">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4>Siga Busca Food</h4>
+                <p>Siga nossas redes sociais para dicas especiais</p>
+                <a href="https://facebook.com" target="_blank" class="white-text">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="white-text">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="white-text">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://googleplus.com" target="_blank" class="white-text">
+                  <i class="fab fa-google-plus fa-2x"></i>
+                </a>
+                <a href="https://pinterest.com" target="_blank" class="white-text">
+                  <i class="fab fa-pinterest fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Gallery -->
+        <section id="gallery" class="section section-gallery scrollspy">
+          <div class="container">
+            <h4 class="center">
+              <span class="teal-text">Fotos </span> Galeria
+            </h4>
+            <div class="row">
+              <div class="col s12 m3 gallery-img">
+                <img class="materialboxed responsive-img" src="img/r1.jpg" alt="">
+              </div>
+              <div class="col s12 m3 gallery-img">
+                <img class="materialboxed responsive-img" src="img/r2.jpg" alt="">
+              </div>
+              <div class="col s12 m3 gallery-img">
+                <img class="materialboxed responsive-img" src="img/r3.jpg" alt="">
+              </div>
+              <div class="col s12 m3">
+                <img class="materialboxed responsive-img" src="img/r4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12 m3 gallery-img">
+                <img class="materialboxed responsive-img" src="img/r5.jpg" alt="">
+              </div>
+              <div class="col s12 m3 gallery-img">
+                <img class="materialboxed responsive-img" src="img/r6.jpg" alt="">
+              </div>
+              <div class="col s12 m3 gallery-img">
+                <img class="materialboxed responsive-img" src="img/r7.png" alt="">
+              </div>
+              <div class="col s12 m3">
+                <img class="materialboxed responsive-img" src="img/r8.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12 m4 l3 gallery-img">
+                <img class="materialboxed responsive-img" src="img/r9.jpg" alt="">
+              </div>
+              <div class="col s12 m4 l3  gallery-img">
+                <img class="materialboxed responsive-img" src="img/r10.jpg" alt="">
+              </div>
+              <div class="col s12 m4 l3  gallery-img">
+                <img class="materialboxed responsive-img" src="img/r11.jpg" alt="">
+              </div>
+              <div class="col s12 m3">
+                <img class="materialboxed responsive-img" src="img/r12.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Contact -->
+        <section id="contact" class="section section-contact scrollspy">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card-panel teal white-text center">
+                  <i class="material-icons medium">email</i>
+                  <h5>Entre em contato conosco</h5>
+
+                </div>
+                <ul class="collection with-header">
+                  <li class="collection-header">
+                    <h4>Localização</h4>
+                  </li>
+                  <li class="collection-item">USCS CAMPUS CONCEIÇÃO</li>
+                  <li class="collection-item">R. Conceição, 321 - Santo Antônio, São Caetano do Sul - SP, 09530-060</li>
+                  <li class="collection-item">Telefone (11) 4227-7816</li>
+                </ul>
+              </div>
+
+          <div class="col s12 m6">
+           <div class="card-panel grey lighten-3">
+             <h5>Dúvidas? Entre em contato conosco.</h5>
+             <form id="form-contato">
+             <div class="input-field">
+               <input type="text" placeholder="Name" id="name" required title="Campo obrigatório. Digite no mínimo dois caracteres" minlength="5">
+               <label for="name">Nome</label>
+               <span class="error" style="display: none">Nome deve ter pelo menos 5 caracteres. Não pode conter somente numeros.</span>
+             </div>
+             <div class="input-field">
+               <input type="email" placeholder="Email" id="email" required>
+               <label for="email">Email</label>
+               <span class="error" style="display: none">Digite um email valido.</span>
+             </div>
+             <div class="input-field">
+               <input type="text" placeholder="(11) 99999-9999" id="phone" required>
+               <label for="phone">Telefone</label>
+               <span class="error" style="display: none">Digite um telefone valido.</span>
+             </div>
+             <div class="input-field">
+               <textarea class="materialize-textarea" placeholder="Enter Message" id="message" required></textarea>
+               <label for="message">Messagem</label>
+               <span class="error" style="display: none">Menssagem deve ter pelo menos 5 caracteres.</span>
+             </div>
+             <input type="submit" value="Enviar" id="btn-enviar" class="btn" disabled>
+           </div>
+         </div>
+       </div>
+     </div>
+   </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="section teal darken-2 white-text center">
+          <p class="flow-text">Busca Food<span>&copy;</span> 2019</p>
+        </footer>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script  src="js/jquery.mask.js" ></script>
+      <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+  </html>
